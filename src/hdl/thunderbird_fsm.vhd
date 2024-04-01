@@ -112,8 +112,8 @@ begin
     S_next(3) <= S(4);
     S_next(4) <= S(5);
     S_next(5) <= not i_L and i_R and S(7);
-    S_next(6) <= (i_L and i_R) ;  
-    S_next(7) <= (not i_R and not i_L and S(6)) or (i_L and i_R and S(6))
+    S_next(6) <= i_L and i_R and not S(6) ;  
+    S_next(7) <= (not i_R and not i_L) or S(6)
      or (not i_R and not i_L and S(7)) or S(0) or S(3);
     --output--
     o_LightR(0) <= S(5) or S(4) or S(3) or S(6);
