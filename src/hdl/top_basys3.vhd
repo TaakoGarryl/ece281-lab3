@@ -112,7 +112,7 @@ begin
                 i_L  => sw(15),
                 i_R  => sw(0),
                 i_reset => btnR,
-                i_clk   => btnL,
+                i_clk   => w_clk,
                 o_LightR(0)  => led(2),
                 o_LightR(1)  => led(1),
                 o_LightR(2)  => led(0),
