@@ -129,7 +129,7 @@ begin
     register_proc : process (i_clk, i_reset )
     begin
         if i_reset ='1' then
-            S <= "10000000";      
+            S <= "10000000";      --set to off
         elsif (rising_edge(i_clk)) then
             S <= S_next;
         end if;

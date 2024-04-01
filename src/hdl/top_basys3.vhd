@@ -115,7 +115,7 @@ begin
                 i_clk   => btnL,
                 o_LightR(0)  => led(2),
                 o_LightR(1)  => led(1),
-                o_LightR(2)  => led(3),
+                o_LightR(2)  => led(0),
                 o_LightL(0)  => led(13),
                 o_LightL(1)  => led(14), 
                 o_LightL(2)  => led(15)
